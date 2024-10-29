@@ -1,0 +1,124 @@
+/* Modernes Design für die Website */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Schriftart hier ändern */
+}
+
+body {
+    background: linear-gradient(to right, #0e0e0e, #1a1a1a);
+    color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    height: 100px; /* Logo-Größe hier anpassen */
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00ffcc; /* Hover-Farbe hier anpassen */
+}
+
+main {
+    padding: 2rem 3rem;
+}
+
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.image-gallery img {
+    width: 200px; /* Bildbreite hier anpassen */
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+
+.info-section {
+    margin-bottom: 2rem;
+}
+
+h2, h3 {
+    color: #00ffcc; /* Titel-Farbe hier anpassen */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f5f5f5;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #00ffcc; /* Hover-Farbe für Schließen-Symbol hier anpassen */
+}
